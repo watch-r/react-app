@@ -2,15 +2,22 @@ import { useState } from "react";
 // import Alert from "./components/Alert";
 // import Button from "./components/Button";
 import ListGroup from "./components/ListGroup/";
+import Like from "./components/Like";
 
 
 function App() {
-    const items = ['New york', 'Dhaka', 'New Delhi', 'Islamabad']
-    return(
+
+    return (
         <div>
-            <ListGroup items={items} heading="Cities" onSelectItem={()=> console.log('clicked')} />
+            <Like onClick={()=> console.log('clicked')}/>
         </div>
-    );
+    )
+    // const items = ['New york', 'Dhaka', 'New Delhi', 'Islamabad']
+    // return(
+    //     <div>
+    //         <ListGroup items={items} heading="Cities" onSelectItem={()=> console.log('clicked')} />
+    //     </div>
+    // );
     // const [alertVisible, setAlertVisibility] = useState(false);
     // return (
     //     <div>

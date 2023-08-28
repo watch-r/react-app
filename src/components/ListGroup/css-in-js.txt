@@ -1,0 +1,7 @@
+Advantages:
+    *Scoped styles
+    *all the css & JS/TS code in the one place
+    *Easier to delete a component
+    *Easier to style based on props/useState
+Libraries:
+    *
