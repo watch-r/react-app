@@ -4,14 +4,21 @@ import { useState } from "react";
 import ListGroup from "./components/ListGroup/";
 import Like from "./components/Like";
 
-
 function App() {
+    // const [firstName, setFirstName] = useState("Hola");
+    // const [lastName, setLastName] = useState("James");
+    // const fullName = firstName + " " + lastName;
 
-    return (
-        <div>
-            <Like onClick={()=> console.log('clicked')}/>
-        </div>
-    )
+    //! object state hook: Must Use Colon(:) example 'fisrtName:'
+    const [person, setPerson] = useState({
+        firstName: "hi",
+        lastName: "go",
+    });
+    const [isLoading, setLoading] = useState(false);
+
+    return <div>
+        {/* { person } */}
+    </div>;
     // const items = ['New york', 'Dhaka', 'New Delhi', 'Islamabad']
     // return(
     //     <div>
